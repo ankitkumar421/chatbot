@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title> Maxeon </title>
+        <link rel="stylesheet" href="css/maxion.css"/>
+        <script type="text/javascript" src="js/chatbot.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="main">
+                <div class="logo"> 
+                    <p>Maxeon</p>
+                    <ul>
+                        <li class="active"><a href="#">Products</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">User Cases</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="moto">
+            <p>Where<br> words<br> fail,<br>Music<br> speaks.</p>
+        </div>
+        <div class="chat1">
+            <button onclick="toggleChatbot()"><img src="images/logo.png" alt=""></button>
+        </div>
+    </body>
+    <div id="popup" class="hidden">
+        <div class="chat">
+            <div class="chat-title">
+                <h1>Maxeon</h1>
+                <h2>Online</h2>
+                <div class="x">
+                    <button onclick="toggleChatbot()">close</button>
+                </div>
+                <figure class="avatar">
+                    <img src="images/logo.png"/>
+                </figure>
+            </div>
+            <div id="all-chat-msg">
+                <div class="messages"><span class="inner-msg">Hi there,how can we help you!!</span></div>
+            </div>
+            <div class="message-box">
+                <input type="text" id="user-input" onkeypress="talkToBotOnEnter(event)" class="message-input" placeholder="Type message..."></input>
+                <button type="submit" class="message-submit" onclick="talkToChatBot(event)">Send</button>
+            </div>
+        </div>
+    </div>
+    </div>
+</html>

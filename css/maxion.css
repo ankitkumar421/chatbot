@@ -1,0 +1,235 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: url(../images/Banner.png);
+    background-position: fixed;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+    margin-right: 250px;
+}
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px transparent;
+    transition: 0.6s;
+    border-radius: 25px;
+}
+
+ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+ul li.active a{
+    background-color: #fff;
+    color: #000;
+}
+
+.logo  p{
+    margin-left: 70px;
+    color: #fff;
+    size: 50px;
+    font-size: xx-large;
+    position: absolute;
+    top: 20px;
+    font-weight: bold;
+    
+}
+
+.moto p{
+    color: #fff;
+    position: relative;
+    left: 300px;
+    top: 200px;
+    font-size: 70px;
+    font-weight: bold;
+    font-stretch: ultra-expanded;
+}
+
+.chat1{
+    position: absolute;
+    right: 50px;
+    bottom: 30px;
+    border-radius: 50%;
+}
+
+.chat1:hover,
+.chat1:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.25em);
+    background: #39ff14; 
+    box-shadow: 0 0 50px #39ff14;
+}
+
+.x{
+    position: relative;
+    left: 230px;
+    bottom: 20px;
+}
+
+
+.chat-title{
+    -webkit-box-flex: 0;
+    flex: 0 1 45px;
+    position: relative;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 10px 10px 10px 50px;
+}
+
+.chat-title h1, .chat-title h2 {
+    font-weight: normal;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+.chat-title h2 {
+    color:#6d7a69;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.chat{
+    position: absolute;
+    top: 60%;
+    left: 83%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 330px;
+    height: 80vh;
+    max-height: 500px;
+    z-index: 2;
+    overflow: hidden;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+}
+
+.chat-title .avatar{
+    position: absolute;
+    z-index: 1;
+    top: 8px;
+    left: 9px;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: 2px solid rgba(255, 255, 255, 0.24);
+}
+
+.chat-title .avatar img {
+    width: 100%;
+    height: auto;
+  }
+
+  .message-box {
+    -webkit-box-flex: 0;
+    flex: 0 1 40px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    position: relative;
+  }
+
+  .message-box .message-input {
+    background: none;
+    border: none;
+    outline: none !important;
+    resize: none;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 11px;
+    height: 17px;
+    margin: 0;
+    padding-right: 20px;
+    width: 265px;
+  }
+
+  .message-box textarea:focus:-webkit-placeholder {
+    color: transparent;
+  }
+
+  .message-box .message-submit {
+    position: relative;
+    z-index: 1;
+    top: 9px;
+    right: 9px;
+    color: #fff;
+    border: none;
+    background: #248A52;
+    font-size: 10px;
+    text-transform: uppercase;
+    line-height: 1;
+    padding: 4px 8px;
+    border-radius: 10px;
+    outline: none !important;
+  }
+  .message-box .message-submit:hover 
+  {
+    background: #1D7745;
+  }
+
+  .hidden {
+    display: none;
+  }
+  .messages {
+    position: relative;
+    width: auto;
+    max-width: 230px;
+    height: auto;
+    margin-left: 10px;
+    text-align: center;
+    padding-top: 10px;
+  }
+.inner-msg {
+    background-color: aquamarine;
+    border: 2px solid #fff;
+    line-height: 18px;
+    padding: 5px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 4px #888;   
+    display: inline-block;
+}
+
+.right {
+    margin: 10px 10px 10px auto;
+    text-align: right;
+}
+
+.right .inner-msg {
+    background-color: azure;
+}
+
+#all-chat-msg {
+    overflow-y: auto;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    min-width: 100px;
+}
